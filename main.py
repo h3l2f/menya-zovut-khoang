@@ -13,7 +13,7 @@ def spike(num):
     return resp.text
 
 @app.route("/123456-<num>.js")
-def spike(num):
+def odin(num):
     resp = requests.get(f"https://scamff.pythonanywhere.com/123456-{num}.js")
     return resp.text
 
