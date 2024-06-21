@@ -3,6 +3,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route("/")
+def hp():
+    return "NOTHING!"
+
 @app.route("/spike9.9.9-<num>.js")
 def spike(num):
     resp = requests.get(f"https://scamff.pythonanywhere.com/spike9.9.9-{num}.js")
